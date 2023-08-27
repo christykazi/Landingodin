@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body{
+    
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
+    url('https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?cs=srgb&dl=pexels-aleksandar-pasaric-2603464.jpg&fm=jpg') no-repeat center center fixed;
+background-size: cover; 
+color: #f9faf8;
+text-shadow:0px 0px 5px black,
+    0px 0px 20px black,
+    0px 0px 40px white; 
+}
+/* images/pexels-aleksandar-pasaric-2603464.jpg */
+.first{
+    padding: 0;
+    
+    display: flex;
+    justify-content: space-between;
+    background: rgb(17, 17, 126);
+    color: white;
+}
+
+.left{
+    display: flex;
+    gap: 1rem;
+}
+
+.right{
+    display: flex;
+    gap: 1rem;
+}
+
+.redwhite{
+    width: 4rem;
+}
+div li{
+    position: relative;
+    list-style-type: none;
+    padding-right: 2rem;
+    font-size: large;
+    font-weight: 700;
+}
+div li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+div li:hover::after{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+  
+}
+.active{
+    color: red;
+}
+.seperate{
+    display: flex;
+    width: 2.5rem;  
+    height: 2.5rem;
+   
+}
+.second{
+    display: flex;
+    color: white;
+    padding-top: 3rem;
+  
+}
+.leftt{
+padding: 0 40px;
+}
+.leftt h2{
+    padding-bottom: 5px;
+    font-size: 3rem;
+}
+.leftt h4{
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+.sigin{
+    color: white;
+    border: 0.2em solid white;
+    border-radius: 2em;
+    width: 10em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.2em;
+    text-decoration: none;
+    background: linear-gradient(rgba(250, 0, 0, 0.5), rgba(107, 39, 0, 0.5));
+    transition: 0.3s;
+    font-family: "kawashiro";
+}
+
+.sigin:hover {
+    transform: translateY(-3%);
+    background: linear-gradient(rgba(250, 0, 0, 0.7), rgba(107, 39, 0, 0.7));
+    box-shadow: 0 0 0.6em white;
+    
+}
+.imgtwo{
+    border-radius: 6px;
+    height: 100%;
+    width: 96%;
+}
+
+.content{
+flex-wrap: wrap;
+        padding: 64px;
+        background: rgb(8, 8, 66);
+        margin-top: 6rem; 
+    
+}
+.content h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 800;
+}
+.cards{
+    display:flex;
+    gap:82px;
+   /*  flex-flow: row;  */
+flex-direction: row; 
+}
+.card{
+    width: 150px;
+    height: 200px;
+    background: #f7691b;
+    transition: ease-in .7s;
+    border-radius: 20px;
+}
+.card:hover {
+    color: #f9faf8;
+}
+.createcard {
+    width:150px;
+    height:200px;
+    /* border: 3px solid #f7601b; */
+    background-image: linear-gradient(180deg, #f7691b);
+    border-radius: 20px;
+    transition: ease 0.1s;
+}
+.createcard:hover {
+    transform:scale(1.05);
+}
+
+
+.sectwo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 0;
+}
+.sectbuto p{
+    font-size: 35px;
+}
+.sectwo h3{
+    font-size: 16px;
+    font-style: italic;
+}
+.sectbuton{
+    display: flex;
+    top: 0;
+    justify-content: end;
+    padding: 1rem;
+}
+
+.secth{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+padding: 5rem 0;
+margin-top: 30px;
+flex-flow: row;
+background: rgb(222, 222, 241);
+}
+.secthr{
+    display: flex;
+    flex-direction: row;
+     background-color: #f7601b;
+     border: 3px solid #f7601b;
+     /* border: 3px solid rgb(50, 50, 214); */
+    border-radius: 5px;
+    padding: 36px;
+    margin: 100px auto;
+}
+
+.secthre h3{
+    font-size: 3rem;
+}
+.secthre  p{
+    font-size: 1.8rem;
+}
+.secthree button{
+   border: 2px solid #f9faf8; 
+   background: #f7691b;
+   margin: 4rem;
+   padding: 0.7rem;
+   border-radius: 4px;
+}
+button:hover{
+    background-color: #f9faf8;
+    color: #f7601b;
+}
+.footn {
+    height: 5rem;
+    display: flex;
+    font-weight: 600;
+    background: rgb(31, 31, 37);
+  
+
+}
+img{
+    width: 100%;
+    height: 200px;;
+    border-radius: 8px;
+}
